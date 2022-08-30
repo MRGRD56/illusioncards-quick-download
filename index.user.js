@@ -9,6 +9,8 @@
 // ==/UserScript==
 
 (function () {
+    const DOWNLOAD_SVG = '<svg focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path></svg>';
+
     const CUSTOM_CSS = `
 .mrgrd56__card-download-button {
     position: absolute;
@@ -74,7 +76,7 @@
         button.href = imageUrl;
         button.download = '';
         button.target = '_blank';
-        button.innerHTML = '<svg focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path></svg>';
+        button.innerHTML = DOWNLOAD_SVG;
 
         thumbLink.appendChild(button);
     };
