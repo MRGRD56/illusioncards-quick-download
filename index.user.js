@@ -1,14 +1,19 @@
 // ==UserScript==
-// @name         illusioncards.booru.org card download buttons
+// @name         illusioncards.booru.org card download buttons and cards score
 // @namespace    https://illusioncards.booru.org
 // @version      1.0
 // @author       MRGRD56
-// @match        https://illusioncards.booru.org/index.php?page=post*
+// @match        https://illusioncards.booru.org/index.php*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @grant        none
 // ==/UserScript==
 
 (function () {
+    const queryParams = new URLSearchParams(window.location.search);
+    if (queryParams.get('page') !== 'post' || queryParams.get('s') !== 'list') {
+        return;
+    }
+
     const DOWNLOAD_SVG = '<svg focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path></svg>';
 
     const CUSTOM_CSS = `
