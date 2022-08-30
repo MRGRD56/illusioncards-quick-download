@@ -76,7 +76,7 @@
         button.classList.add('mrgrd56__card-download-button');
         button.href = imageUrl;
         button.download = '';
-        button.target = '_blank';
+        // button.target = '_blank';
         button.innerHTML = DOWNLOAD_SVG;
 
         thumbLink.appendChild(button);
