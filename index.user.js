@@ -20,6 +20,7 @@
     border: 1px solid rgba(66, 66, 66, 0.8);
     background: rgba(33, 33, 33, 0.8);
     padding: 4px;
+    margin: 3px;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.1s;
