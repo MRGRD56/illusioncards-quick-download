@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 (function () {
-    const CSS = `
+    const CUSTOM_CSS = `
 .mrgrd56__card-download-button {
     position: absolute;
     bottom: 0;
@@ -42,7 +42,7 @@
 }
 `.trimStart();
 
-    document.head.innerHTML += `\n<style>${CSS}</style>`;
+    document.head.innerHTML += `\n<style>${CUSTOM_CSS}</style>`;
 
     const getFullImageUrl = (thumbUrl) => {
         const regex = /\/thumbnails\/\/?(\d+)\/thumbnail_(.+)/;
