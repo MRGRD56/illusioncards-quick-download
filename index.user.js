@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         illusioncards.booru.org card download buttons and cards score
-// @namespace    https://illusioncards.booru.org
+// @namespace    https://github.com/MRGRD56
 // @version      1.0
 // @author       MRGRD56
 // @match        https://illusioncards.booru.org/index.php*
